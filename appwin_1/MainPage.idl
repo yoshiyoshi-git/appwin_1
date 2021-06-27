@@ -1,0 +1,13 @@
+import "StringViewModel.idl";
+
+namespace appwin_1
+{
+    [default_interface]
+    runtimeclass MainPage : Windows.UI.Xaml.Controls.Page
+    {
+        MainPage();
+        StringViewModel MainString{ get; };
+
+        void SetMainText(String data);
+    }
+}

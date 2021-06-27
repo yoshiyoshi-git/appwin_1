@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="appwin_1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:appwin_1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid RequestedTheme="Default">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <Button x:Name="make_blank1" Click="make_blank1_Click"  Content="make_blank1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5"/>
+        <Button x:Name="send_blank1_navi1" Click="send_blank1_navi1_Click" Content="send_blank1_navi1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5"/>
+        <Button x:Name="send_blank1_navi2" Click="send_blank1_navi2_Click" Content="send_blank1_navi2" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5"/>
+        <Button x:Name="close_blank1" Click="close_blank1_Click" Content="close_blank1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5"/>
+        <TextBox x:Name="main_text" Text="{x:Bind MainString.DataString, Mode=OneWay}" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" Margin="5,5,5,5"/>
+    </Grid>
+</Page>

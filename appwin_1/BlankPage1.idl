@@ -1,0 +1,8 @@
+namespace appwin_1
+{
+    [default_interface]
+    runtimeclass BlankPage1 : Windows.UI.Xaml.Controls.Page
+    {
+        BlankPage1();
+    }
+}
